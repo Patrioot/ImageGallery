@@ -17,7 +17,7 @@
             <div id="lightgallery" class="list-unstyled row">
                 <?php foreach ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10] as $num) : ?>
                     <?php $image = "https://patrioot.github.io/ImageGallery/img/AR/Step$num.png"; ?>
-                    <div class="mySlides" data-src="https://patrioot.github.io/ImageGallery/img/AR/Step1.png" data-sub-html="<h4>Step 1</h4>">
+                    <div class="mySlides" data-src="https://patrioot.github.io/ImageGallery/img/AR/Step1.png" data-sub-html= "<h4>Step<?php echo $num?></h4>">
                         <div class="numbertext"> <?php echo $num; ?>/10</div>
                         <img src=<?php echo $image; ?> style="width: 100%" />
                     </div>
@@ -41,7 +41,7 @@
                 <?php foreach ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10] as $num) : ?>
                     <?php $image = "https://patrioot.github.io/ImageGallery/img/AR/Step$num.png"; ?>
                     <div class="column">
-                        <img class="demo cursor" src=<?php echo $image; ?> style="width: 100%" onclick="currentSlide(<?php echo $num ?>)" alt="Step 1" />
+                        <img class="demo cursor" src=<?php echo $image; ?> style="width: 100%" onclick="currentSlide(<?php echo $num ?>)" alt="Step <?php echo $num?>" />
                     </div>
                 <?php endforeach ?>
             </div>
@@ -98,4 +98,4 @@
     <script src="js/jquery.mousewheel.min.js"></script>
 </body>
 
-</html>
+</html> 
