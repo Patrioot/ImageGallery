@@ -13,6 +13,7 @@
     <div class="demo-gallery">
         <!-- Here  -->
         <div class="container">
+
             <!-- Click on image -->
             <div id="lightgallery" class="list-unstyled row">
                 <?php foreach ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10] as $num) : ?>
@@ -56,19 +57,15 @@
         $(document).ready(function() {
             $("#lightgallery").lightGallery();
         });
-
         // Slide show codes
         var slideIndex = 1;
         showSlides(slideIndex);
-
         function plusSlides(n) {
             showSlides((slideIndex += n));
         }
-
         function currentSlide(n) {
             showSlides((slideIndex = n));
         }
-
         function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("mySlides");
@@ -91,11 +88,9 @@
             captionText.innerHTML = dots[slideIndex - 1].alt;
         }
     </script>
-
     <!-- Pacakges -->
-    <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+    <script src="js/picturefill.min.js"></script>
     <script src="js/lightgallery-all.min.js"></script>
     <script src="js/jquery.mousewheel.min.js"></script>
 </body>
-
 </html> 
